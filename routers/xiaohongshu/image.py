@@ -28,7 +28,10 @@ def HongshuParser(url: str) -> dict:
         return {"message": "Internal Server Error", "error": str(e), "url": url}
 
 @image_router.get("/")
-async def parse_image(url: str = Query(..., description="小红书页面链接")):
+async def parse_image(url: str = Query(..., description="url编码后页面链接")):
+    """
+    小红书图片解析, 输入小红书url编码后页面链接，返回图片id和文章描述
+    """
     res = HongshuParser(url)
     return res
     

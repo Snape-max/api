@@ -29,7 +29,7 @@ Qiumo API 是一个轻量级、模块化的 API 系统，旨在为开发者提�
 
 3. 启动应用：
    ```bash
-   uvicorn app:app --reload
+   uvicorn app:app --host 0.0.0.0 --port 5901 --workers 4
    ```
 
 4. 访问以下链接：
