@@ -108,7 +108,7 @@ def index():
             </ul>
         </main>
         <footer>
-            <p>Powered by <a href="https://github.com/qiumo/qiumo-api">Qiumo API</a></p>
+            <p>Powered by <a href="https://github.com/Snape-max/api">Qiumo API</a></p>
         </footer>
     </body>
     </html>
