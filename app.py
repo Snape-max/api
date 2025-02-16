@@ -47,7 +47,7 @@ def index():
             }
             header, footer {
                 background-color: #f9f9f9;
-                color: white;
+                color: #0c4c7d;
                 text-align: center;
                 padding: 1rem 0;
             }

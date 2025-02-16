@@ -23,7 +23,7 @@ def HongshuParser(url: str) -> dict:
         images = []
         for s in urls:
             images.append(re.findall(r'/([^!/]+)!', s)[0])
-        return {"images": images, "description": description}
+        return {"images_traceId": images, "description": description}
     except Exception as e:
         return {"message": "Internal Server Error", "error": str(e), "url": url}
 
