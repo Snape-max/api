@@ -41,13 +41,13 @@ def index():
                 font-family: Arial, sans-serif;
                 margin: 0;
                 padding: 0;
-                background-color: #f9f9f9;
-                color: #333;
+                background-color: #1a1b26;
+                color: #a9b1d6;
                 line-height: 1.6;
             }
             header, footer {
-                background-color: #f9f9f9;
-                color: #0c4c7d;
+                background-color: #1a1b26;
+                color: #9d7cd8;
                 text-align: center;
                 padding: 1rem 0;
             }
@@ -55,12 +55,12 @@ def index():
                 max-width: 800px;
                 margin: 2rem auto;
                 padding: 1.5rem;
-                background: white;
+                background: #1a1b26;
                 border-radius: 8px;
-                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
             }
             h1, h2 {
-                color: #0c4c7d;
+                color: #9d7cd8;
                 text-align: center;
             }
             ul {
@@ -72,7 +72,7 @@ def index():
                 font-size: 1.1rem;
             }
             a {
-                color: #0c4c7d;
+                color: #9d7cd8;
                 text-decoration: none;
                 font-weight: bold;
             }
