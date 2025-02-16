@@ -46,7 +46,7 @@ def index():
                 line-height: 1.6;
             }
             header, footer {
-                background-color: #4CAF50;
+                background-color: #f9f9f9;
                 color: white;
                 text-align: center;
                 padding: 1rem 0;
@@ -54,23 +54,27 @@ def index():
             main {
                 max-width: 800px;
                 margin: 2rem auto;
-                padding: 1rem;
+                padding: 1.5rem;
                 background: white;
                 border-radius: 8px;
                 box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             }
             h1, h2 {
-                color: #4CAF50;
+                color: #0c4c7d;
+                text-align: center;
             }
-            code {
-                background-color: #f4f4f4;
-                padding: 0.2rem 0.5rem;
-                border-radius: 4px;
-                font-family: monospace;
+            ul {
+                list-style-type: none;
+                padding: 0;
+            }
+            li {
+                margin: 1rem 0;
+                font-size: 1.1rem;
             }
             a {
-                color: #4CAF50;
+                color: #0c4c7d;
                 text-decoration: none;
+                font-weight: bold;
             }
             a:hover {
                 text-decoration: underline;
@@ -97,13 +101,11 @@ def index():
             <h1>Qiumo API</h1>
         </header>
         <main>
-            <center>
-                <h2>小红书图片解析</h2>
-                <p>请求：<code>/xiaohongshu/image?url={URL}</code></p>
-            </center>
-            <center>
-                <h2>其他——敬请期待</h2>
-            </center>
+            <p>可用的 API 列表：</p>
+            <ul>
+                <li><a href="/docs#/XiaoHongShu">小红书图片解析</a></li>
+                <li><a href="#">其他功能（敬请期待）</a></li>
+            </ul>
         </main>
         <footer>
             <p>Powered by <a href="https://github.com/qiumo/qiumo-api">Qiumo API</a></p>
