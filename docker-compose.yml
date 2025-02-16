@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "4725:4725"
+    volumes:
+      - .:/app
+    command: >
+      uvicorn --host 0.0.0.0 --port 4725 --workers 4 app:app
